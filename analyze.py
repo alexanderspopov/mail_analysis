@@ -62,7 +62,7 @@ def parse_email(email):
     keep_lines = []
     for line in contents:
 
-      # truncated the forwarded parts of an email as well as the contents of the
+      # truncate the forwarded parts of an email as well as the contents of the
       # previous email that the author is replying to
       if re.search('On [A-Za-z]{2,3}, [A-Za-z]{2,3} \d{1,2}, \d{4} at', line) or \
          re.search('On [A-Za-z]{2,3} \d{1,2}, \d{4}, at', line) or \
